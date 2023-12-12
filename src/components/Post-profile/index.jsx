@@ -7,6 +7,8 @@ export function PostProfile({ src }) {
         <Container>
 
             <Content src={src} alt='Post' />
+            <Content src={src} alt='Post' />
+            <Content src={src} alt='Post' />
 
         </Container>
 

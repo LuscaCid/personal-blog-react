@@ -1,4 +1,4 @@
-import styled from "styled-components";
+    import styled from "styled-components";
 
 export const Container = styled.div`
 
@@ -17,6 +17,7 @@ export const Button = styled.button`
 
     width: fit-content;
     height: 15px;
+    font-size: 30px;
 
     border: none;
 
@@ -49,8 +50,8 @@ export const Content = styled.div`
 
         > img {
 
-            height: 90px;
-            width: 90px;
+            height: 150px;
+            width: 150px;
             border-radius: 50%;
 
             display: flex;
@@ -84,7 +85,7 @@ export const Info = styled.div`
 
     > p {
 
-        font-size: 40px;
+        font-size: 80px;
         color: white;
         font-family: 'Courier New', Courier, monospace;
 
@@ -100,14 +101,14 @@ export const Info = styled.div`
 
         > span {
 
-            font-size: 16px;
+            font-size: 25px;
             opacity: 0.8;
 
         }
 
         > p {
 
-            font-size: 14px;
+            font-size: 20px;
 
         }
 
@@ -129,7 +130,7 @@ export const Posts = styled.div`
     > h6 {
 
         color: white;
-        font-size: 14px;
+        font-size: 25px;
         font-weight: 400;
         text-align: center;
         width: 100%;

@@ -13,7 +13,7 @@ export const Container = styled.div`
 
 export const Content = styled.img`
 
-    width: 200px;
-    height: 200px;
+    width: 32.7%;
+    height: auto;
 
 `;
