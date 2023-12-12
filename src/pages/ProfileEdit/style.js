@@ -11,6 +11,53 @@ export const Container = styled.div`
 
     overflow-y: auto;
 
+    #modal {
+
+        display: flex;
+        flex-direction: column;
+
+
+        gap: 200px;
+
+        padding: 20px;
+
+        > p {
+
+            font-weight: bold;
+            font-size: 20px;
+
+        }
+        
+        > div {
+
+            display: flex;
+            justify-content: space-between;
+
+            > button {
+
+                padding: 10px 20px;
+                border: none;
+                border-radius: 8px;
+
+                font-size: 20px;
+
+            }
+
+            > button:first-child {
+
+                background: green;
+
+            }
+
+            > button:last-child {
+
+                background: red;
+
+            }
+
+        }
+
+    }
 `;
 
 
@@ -67,7 +114,7 @@ border-radius: 8px;
         display: flex;
         justify-content: space-between;
 
-        > a {
+        > button {
 
                 color: ${({ theme }) => theme.COLORS.SALMON };
 
@@ -76,6 +123,12 @@ border-radius: 8px;
                 &:hover{
 
                         text-decoration: underline;
+
+                }
+
+                > span {
+
+                    font-size: 20px;
 
                 }
         }
@@ -95,8 +148,6 @@ export const ButtonBack = styled.button`
     background: transparent;
 
 `;
-
-
 
 export const Form = styled.form`
 

@@ -2,20 +2,37 @@ import { Container, Content , ButtonBack, Form, Input } from "./style";
 import Perfil from '../../img/perfil.jpg';
 
 import { Button } from "../../components/Button";
+import { Modal } from "../../components/Modal";
 
 import { IoArrowBackSharp } from "react-icons/io5";
 import { FaPen } from "react-icons/fa";
+import { useState } from "react";
 
 export function ProfileEdit() {
+
+    const [openModal, setOpenModal] = useState(false)
 
     return(
 
         <Container>
+
+            <Modal isOpen={openModal}> 
+
+                <div id='modal'>
+                    <p>Tem certeza que deseja excluir?</p>
+
+                    <div>
+                        <button>Sim</button>
+                        <button onClick={() => setOpenModal(false)} >Não</button>
+                    </div>
+                </div>
+
+            </Modal>
         
             <Content>
                 <div>
                     <ButtonBack> <IoArrowBackSharp color="#dfdfdf"  /> </ButtonBack>
-                    <a href="#">Excluir conta</a>
+                    <ButtonBack onClick={() => setOpenModal(true)}><span>Excluir conta</span> </ButtonBack>
                 </div>
 
                     <button id='profile'>
