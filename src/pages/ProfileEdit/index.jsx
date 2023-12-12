@@ -1,6 +1,7 @@
-import { Container, Content , Button} from "./style";
-import Perfil from '../../img/perfil.jpg'
-import { Input } from "../../components/Input";
+import { Container, Content , ButtonBack, Form, Input } from "./style";
+import Perfil from '../../img/perfil.jpg';
+
+import { Button } from "../../components/Button";
 
 import { IoArrowBackSharp } from "react-icons/io5";
 import { FaPen } from "react-icons/fa";
@@ -13,7 +14,7 @@ export function ProfileEdit() {
         
             <Content>
                 <div>
-                    <Button> <IoArrowBackSharp color="#dfdfdf"  /> </Button>
+                    <ButtonBack> <IoArrowBackSharp color="#dfdfdf"  /> </ButtonBack>
                     <a href="#">Excluir conta</a>
                 </div>
 
@@ -23,7 +24,7 @@ export function ProfileEdit() {
                     </button>
 
 
-                <div>
+                <Form>
 
                     <div>
                         <label htmlFor="user">Usuário: </label>
@@ -41,16 +42,14 @@ export function ProfileEdit() {
                     </div>
 
                     <div>
-                        <label htmlFor="senha">Senha: </label>
-                        <Input id='senha' type='password' placeholder='Senha' />
+                        <label htmlFor="biografia">Biografia:</label>
+                        <textarea name="" id="biografia" cols="30" rows="10" placeholder="Diga um pouco sobre você"></textarea>
                     </div>
 
-                    <div>
-                        <label htmlFor="confirmar-senha">Confirmar senha: </label>
-                        <Input id='confirmar-senha' type='password' placeholder='Confirmar senha' />
-                    </div>
 
-                </div>
+                    <Button title='Editar' />
+
+                </Form>
             </Content>
 
         </Container>

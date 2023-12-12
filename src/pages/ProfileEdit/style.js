@@ -5,7 +5,7 @@ export const Container = styled.div`
     width: 100%;
     min-height: 100vh;
 
-    padding: 10px 64px 0;
+    padding: 20px 64px;
 
     background: ${({ theme }) => theme.COLORS.BACKGROUND_800} fixed;
 
@@ -17,7 +17,7 @@ export const Container = styled.div`
 export const Content = styled.div`
 
 background: rgba(120, 120, 120, 0.5);
-padding: 10px;
+padding: 20px;
 border-radius: 8px;
 
 > #profile {
@@ -84,7 +84,7 @@ border-radius: 8px;
     
 `;
 
-export const Button = styled.button`
+export const ButtonBack = styled.button`
 
     width: fit-content;
     height: 15px;
@@ -96,45 +96,66 @@ export const Button = styled.button`
 
 `;
 
-export const Info = styled.div`
 
-display: flex;
 
-justify-content: center;
-align-items: center;
-gap: 3px;
+export const Form = styled.form`
 
-    > p {
+    padding: 0 200px;
 
-        font-size: 80px;
-        color: white;
-        font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    flex-direction: column;
+
+    > button {
+
+        background: ${({theme}) => theme.COLORS.SALMON};
+        margin-top: 0;
 
     }
 
     > div {
 
-        color: white;
+        margin-top: 10px;
 
         display: flex;
         flex-direction: column;
-        align-items: center;
 
-        > span {
+        > label {
 
-            font-size: 25px;
-            opacity: 0.8;
-
+                color: #dfdfdf;
+                margin-bottom: 8px;
         }
 
-        > p {
+        > textarea {
 
-            font-size: 20px;
+                resize: none;
+                padding: 10px;
+                border-radius: 10px;
 
         }
 
     }
 
+    > button {
 
+        margin-top: 20px;
 
-`; 
+    }
+
+`;
+
+export const Input = styled.input`
+
+        background: #dfdfdf;
+
+        width: 100%;
+        height: 24px;
+
+        border-left: 2px solid black;
+        border-top: none;
+        border-radius: 10px;
+        border-bottom: none;
+        border-right: none;
+        padding: 20px 14px;
+        box-shadow: 0 0 3px 1px rgb(0,0,0, 0.3);
+
+`;
