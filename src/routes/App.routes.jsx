@@ -7,8 +7,8 @@ const AppRoutes = () => {
   return (
     <Routes>
       <Route path='/' element = {<Feed/>}/>
-      <Route path='profile' element = { <Profile/> } />
-      <Route path='profile-edit' element = { <ProfileEdit/> } />
+      <Route path='/profile' element = { <Profile/> } />
+      <Route path='/profile-edit' element = { <ProfileEdit/> } />
     </Routes>
   )
 }
