@@ -4,8 +4,8 @@ const ModalPost = () => {
   return (
     <Container>
         <div>
-         
-            <h1></h1>
+          
+           
         </div>
     </Container>
   )

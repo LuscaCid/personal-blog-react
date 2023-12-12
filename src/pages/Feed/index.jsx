@@ -13,7 +13,6 @@ export const Feed = ()=>{
   const {user, logout} = useAuth()
   const [matrix, setMatrix] = useState([])
 
-   
   
   useEffect(() => {
     async function fetchData(){

@@ -1,8 +1,9 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-    
-    width:min(430px, 90%);
+    cursor: pointer;
+
+    width:min(430px, 95%);
     margin: auto;
     border-radius: 5px;
     box-shadow: 0 1px 2px -1px rgb(0,0,0, 0.3);
@@ -14,6 +15,9 @@ export const Container = styled.div`
     justify-content: center;
     overflow-y: auto;
     gap: 14px;
+    &:hover{
+        filter: brightness(0.9);
+    }
     > img {
         object-fit: cover;
         width: 350px;
