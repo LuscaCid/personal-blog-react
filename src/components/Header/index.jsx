@@ -46,14 +46,21 @@ export function Header() {
                 type="text"/>
                 <div className="listdata">
                      {
-                    searchedUsers[1] && searchedUsers.map((found, index) => (    
+                    searchedUsers[1] && searchedUsers.map((found, index) =>   {
+                        console.log(user.id, found)
+
+                        if(user.id != found.user.id){
+                           return <ListComponent 
+                            key={String(index)}
+                            following = {found.following}
+                            user={found.user}/>
+                        } 
+                        
+                    }  
                     
-                        <ListComponent 
-                        key={String(index)}
-                        following = {found.following}
-                        user={found.user}/>
+                        
                     
-                    ))
+                    )
                     }
                 </div>
                

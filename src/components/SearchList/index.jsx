@@ -31,7 +31,7 @@ const ListComponent = ({user, following}) => {
     <Container>
       <div className='user-info'>
         <img src={avatarURL} alt="user image" />
-        <h3>{user.name}</h3>
+        <h5>{user.username}</h5>
       </div>
       <div className="button">
         {
