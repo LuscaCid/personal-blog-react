@@ -12,21 +12,18 @@ export const Container = styled.div`
     align-items: center;
     
 
-    display: grid;
-    grid-template-rows: 56px auto;
-    grid-template-areas: "header"
-    "content";
-
 `;
 
 export const Content = styled.div`
     display: flex;
     flex-direction: column;
     gap: 1rem;
-    
     width: 100%;
-    margin: 2rem auto;
-    margin-top: -150px;
-
+    margin: 65px auto;
+    
+    .conteudo{
+        height: 100vh;
+        overflow-y: auto;
+    }
 
 `;
