@@ -13,6 +13,57 @@ export const Container = styled.div`
 
 `;
 
+
+export const Content = styled.div`
+
+background: rgba(120, 120, 120, 0.5);
+padding: 10px;
+border-radius: 8px;
+
+> div:first-child {
+
+    display: flex;
+        justify-content: space-between;
+        
+    }
+    
+    > div:nth-child(2) {
+        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: white;
+        
+        margin-bottom: 50px;
+        
+        
+        > img {
+            
+            height: 150px;
+            width: 150px;
+            border-radius: 50%;
+            
+            display: flex;
+            margin: 40px auto 30px;
+            
+        }
+
+        > h2 {
+            
+            font-size: 25px;
+            
+        }
+        
+        > span {
+            
+            opacity: 0.6;
+            
+        }
+
+    }
+    
+`;
+
 export const Button = styled.button`
 
     width: fit-content;
@@ -25,63 +76,13 @@ export const Button = styled.button`
 
 `;
 
-export const Content = styled.div`
-
-    background: rgba(120, 120, 120, 0.5);
-    padding: 10px;
-    border-radius: 8px;
-
-    > div:first-child {
-
-        display: flex;
-        justify-content: space-between;
-
-    }
-
-    > div:nth-child(2) {
-
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        color: white;
-
-        margin-bottom: 50px;
-
-
-        > img {
-
-            height: 150px;
-            width: 150px;
-            border-radius: 50%;
-
-            display: flex;
-            margin: 40px auto 30px;
-
-        }
-
-        > h2 {
-
-            font-size: 25px;
-
-        }
-
-        > span {
-
-            opacity: 0.6;
-
-        }
-
-    }
-
-`;
-
 export const Info = styled.div`
 
-    display: flex;
+display: flex;
 
-    justify-content: center;
-    align-items: center;
-    gap: 3px;
+justify-content: center;
+align-items: center;
+gap: 3px;
 
     > p {
 
