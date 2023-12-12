@@ -28,7 +28,8 @@ export const Feed = ()=>{
 
       
     <Header />
-      <Content
+    <div className="conteudo">
+       <Content
     
       >
         {
@@ -48,6 +49,8 @@ export const Feed = ()=>{
         }
       </Content>
 
+    </div>
+     
     </Container>
   )
 }

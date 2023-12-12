@@ -22,7 +22,7 @@ export function Header() {
             console.log(searchedUsers)
         }
         if(inputSearch)fetchData()
-        else setSearchedUsers([])
+        else if(inputSearch == '')setSearchedUsers([])
         console.log(inputSearch)
     }, [inputSearch])
 
@@ -39,11 +39,33 @@ export function Header() {
                 <span>Olá, {user.name}</span>
 
             </Perfil>
+            <div className="datalist">
+                <Input 
+                onChange = {e => setInputSearch(e.target.value)}
+                placeholder="Pesquisar usuário"  
+                type="text"/>
+                <div className="listdata">
+                     {
+                    searchedUsers[1] && searchedUsers.map((found, index) =>   {
+                        console.log(user.id, found)
 
-            <Input 
-            onChange = {e => setInputSearch(e.target.value)}
-            placeholder="Pesquisar usuário"  
-            type="text"/>
+                        if(user.id != found.user.id){
+                           return <ListComponent 
+                            key={String(index)}
+                            following = {found.following}
+                            user={found.user}/>
+                        } 
+                        
+                    }  
+                    
+                        
+                    
+                    )
+                    }
+                </div>
+               
+            </div>
+            
 
             <FaPowerOff
             

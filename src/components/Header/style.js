@@ -1,8 +1,28 @@
 import styled from "styled-components";
 
 export const Container = styled.header`
-
-    width: 100%;
+    top: 0;
+    position: fixed;
+    z-index: 333;
+    
+    .datalist{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        position: relative;
+        width: 250px;
+        .listdata{
+            z-index: 999;
+            border-radius: 4px;
+            max-height: 230px;
+            overflow-y: auto;
+            box-shadow: 0 1rem 2rem -1rem rgb(0,0,0,0.5);
+            position: absolute;
+            top: 30px;
+            width: 100%;
+        }
+    }
+        width: 100%;
     height: 56px;
 
     background: ${({ theme }) => theme.COLORS.BACKGROUND_800};
@@ -52,7 +72,7 @@ export const Perfil = styled.div`
 
 export const Input = styled.input`
 
-    width: 230px;
+    width: 250px;
     height: 25px;
 
     border: none;
@@ -60,7 +80,7 @@ export const Input = styled.input`
     padding: 5px 10px;
     margin-right: 115px;
     @media(max-width: 440px){
-        width: 150px;
+        width: 140px;
         margin: 0;
     }
 `;

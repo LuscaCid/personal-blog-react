@@ -13,11 +13,12 @@ export const Container = styled.button`
 
     margin-top: 10px;
 
-    color: ${({ theme }) => theme.COLORS.PINK};
+    color: black;
 
     cursor: pointer;
     transition: background 0.3s;
     &:hover{
+        color: white;
         background: black;
     }
 `;
